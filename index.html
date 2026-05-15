@@ -1060,71 +1060,86 @@ footer {
     <h2 class="s-title" data-i18n="s_projects">Projects</h2>
     <div class="s-line"></div>
   </div>
-  <div class="project-grid">
+<div style="display:flex;flex-direction:column;gap:3rem;">
 
-    <div class="p-card p-wip reveal">
-      <div class="p-top"><span class="p-tag" data-i18n="wip">In Progress</span><span class="p-arrow" style="opacity:0.25">↗</span></div>
-      <h3 class="p-name">CDSS — Clinical NLP</h3>
-      <div class="p-meta"><span class="p-meta-badge p-meta-academic" data-i18n="badge_academic">Cand. merc. — Business Data Science</span><span class="p-meta-grade p-meta-pending" data-i18n="grade_pending">Grade pending</span></div>
-      <p class="p-desc" data-i18n="p_cdss">Master's thesis. Synthetic Danish PSOAP clinical note generation using GPT-4o, evaluated through a downstream patient diagnosis pipeline within a Design Science Research framework.</p>
-      <div class="p-stack"><span class="p-pill">GPT-4o</span><span class="p-pill">Clinical NLP</span><span class="p-pill">DSR</span><span class="p-pill">Danish</span></div>
+    <div>
+      <h3 style="font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;">
+        <span data-i18n="proj_sub_academic">Academic Projects</span>
+        <span style="flex:1;height:1px;background:var(--parchment3);"></span>
+      </h3>
+      <div class="project-grid">
+
+        <div class="p-card p-wip reveal">
+          <div class="p-top"><span class="p-tag" data-i18n="wip">In Progress</span><span class="p-arrow" style="opacity:0.25">↗</span></div>
+          <h3 class="p-name">CDSS — Clinical NLP</h3>
+          <div class="p-meta"><span class="p-meta-badge p-meta-academic" data-i18n="badge_academic">Cand. merc. — Business Data Science</span><span class="p-meta-grade p-meta-pending" data-i18n="grade_pending">Grade pending</span></div>
+          <p class="p-desc" data-i18n="p_cdss">Master's thesis. Synthetic Danish PSOAP clinical note generation using GPT-4o, evaluated through a downstream patient diagnosis pipeline within a Design Science Research framework.</p>
+          <div class="p-stack"><span class="p-pill">GPT-4o</span><span class="p-pill">Clinical NLP</span><span class="p-pill">DSR</span><span class="p-pill">Danish</span></div>
+        </div>
+
+        <a href="https://github.com/Mathias1801/File_to_Podcast" target="_blank" class="p-card reveal">
+          <div class="p-top"><span class="p-tag">Generative AI</span><span class="p-arrow">↗</span></div>
+          <h3 class="p-name">PDF-to-Podcast Pipeline</h3>
+          <div class="p-meta"><span class="p-meta-badge p-meta-academic" data-i18n="badge_academic">Cand. merc. — Business Data Science</span><span class="p-meta-grade"><span data-i18n="grade_label">Grade</span> 12</span></div>
+          <p class="p-desc" data-i18n="p_pdf">Transforms academic PDFs into two-host podcast audio — Llama 3.1 for script generation, Suno Bark TTS for synthesis, plus a knowledge graph and quiz generator.</p>
+          <div class="p-stack"><span class="p-pill">Llama 3.1</span><span class="p-pill">Bark TTS</span><span class="p-pill">Hugging Face</span></div>
+        </a>
+
+        <a href="https://github.com/Mathias1801/Sustainability_Consultant" target="_blank" class="p-card reveal">
+          <div class="p-top"><span class="p-tag">LLM Pipeline</span><span class="p-arrow">↗</span></div>
+          <h3 class="p-name">Sustainability Consultant</h3>
+          <div class="p-meta"><span class="p-meta-badge p-meta-academic" data-i18n="badge_academic">Cand. merc. — Business Data Science</span><span class="p-meta-grade"><span data-i18n="grade_label">Grade</span> 10</span></div>
+          <p class="p-desc" data-i18n="p_sust">Automated weekly pipeline fetching sustainability news, summarising with Gemini 2.5, and generating strategic business consultations — orchestrated by GitHub Actions.</p>
+          <div class="p-stack"><span class="p-pill">Gemini 2.5</span><span class="p-pill">GitHub Actions</span><span class="p-pill">FastAPI</span><span class="p-pill">SQLite</span></div>
+        </a>
+
+      </div>
     </div>
 
-    <a href="https://github.com/Mathias1801/File_to_Podcast" target="_blank" class="p-card reveal">
-      <div class="p-top"><span class="p-tag">Generative AI</span><span class="p-arrow">↗</span></div>
-      <h3 class="p-name">PDF-to-Podcast Pipeline</h3>
-      <div class="p-meta"><span class="p-meta-badge p-meta-academic" data-i18n="badge_academic">Cand. merc. — Business Data Science</span><span class="p-meta-grade"><span data-i18n="grade_label">Grade</span> 12</span></div>
-      <p class="p-desc" data-i18n="p_pdf">Transforms academic PDFs into two-host podcast audio — Llama 3.1 for script generation, Suno Bark TTS for synthesis, plus a knowledge graph and quiz generator.</p>
-      <div class="p-stack"><span class="p-pill">Llama 3.1</span><span class="p-pill">Bark TTS</span><span class="p-pill">Hugging Face</span></div>
-    </a>
+    <div>
+      <h3 style="font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;">
+        <span data-i18n="proj_sub_spare">Spare Time Projects</span>
+        <span style="flex:1;height:1px;background:var(--parchment3);"></span>
+      </h3>
+      <div class="project-grid">
 
-    <a href="https://github.com/Mathias1801/Sustainability_Consultant" target="_blank" class="p-card reveal">
-      <div class="p-top"><span class="p-tag">LLM Pipeline</span><span class="p-arrow">↗</span></div>
-      <h3 class="p-name">Sustainability Consultant</h3>
-      <div class="p-meta"><span class="p-meta-badge p-meta-academic" data-i18n="badge_academic">Cand. merc. — Business Data Science</span><span class="p-meta-grade"><span data-i18n="grade_label">Grade</span> 10</span></div>
-      <p class="p-desc" data-i18n="p_sust">Automated weekly pipeline fetching sustainability news, summarising with Gemini 2.5, and generating strategic business consultations — orchestrated by GitHub Actions.</p>
-      <div class="p-stack"><span class="p-pill">Gemini 2.5</span><span class="p-pill">GitHub Actions</span><span class="p-pill">FastAPI</span><span class="p-pill">SQLite</span></div>
-    </a>
+        <a href="https://github.com/Mathias1801/Internal_Org_Chatbot" target="_blank" class="p-card reveal">
+          <div class="p-top"><span class="p-tag">NLP · RAG</span><span class="p-arrow">↗</span></div>
+          <h3 class="p-name">Employee Assistant</h3>
+          <p class="p-desc" data-i18n="p_emp">RAG chat application for internal documents — OpenAI embeddings in ChromaDB, GPT-4o grounded generation, and a FastAPI backend.</p>
+          <div class="p-stack"><span class="p-pill">OpenAI</span><span class="p-pill">ChromaDB</span><span class="p-pill">FastAPI</span><span class="p-pill">RAG</span></div>
+        </a>
 
-    <a href="https://github.com/Mathias1801/Internal_Org_Chatbot" target="_blank" class="p-card reveal">
-      <div class="p-top"><span class="p-tag">NLP · RAG</span><span class="p-arrow">↗</span></div>
-      <h3 class="p-name">Employee Assistant</h3>
-      <div class="p-meta"><span class="p-meta-badge p-meta-personal" data-i18n="badge_personal">Spare time project</span></div>
-      <p class="p-desc" data-i18n="p_emp">RAG chat application for internal documents — OpenAI embeddings in ChromaDB, GPT-4o grounded generation, and a FastAPI backend.</p>
-      <div class="p-stack"><span class="p-pill">OpenAI</span><span class="p-pill">ChromaDB</span><span class="p-pill">FastAPI</span><span class="p-pill">RAG</span></div>
-    </a>
+        <a href="https://github.com/Mathias1801/Organization_Communication" target="_blank" class="p-card reveal">
+          <div class="p-top"><span class="p-tag">Graph · NLP</span><span class="p-arrow">↗</span></div>
+          <h3 class="p-name">Organisational Knowledge Graph</h3>
+          <p class="p-desc" data-i18n="p_kg">Communication network from the Enron dataset — PageRank, betweenness centrality, community detection, LDA topic modelling, and an interactive PyVis graph.</p>
+          <div class="p-stack"><span class="p-pill">NetworkX</span><span class="p-pill">scikit-learn</span><span class="p-pill">LDA</span><span class="p-pill">PyVis</span></div>
+        </a>
 
-    <a href="https://github.com/Mathias1801/Organization_Communication" target="_blank" class="p-card reveal">
-      <div class="p-top"><span class="p-tag">Graph · NLP</span><span class="p-arrow">↗</span></div>
-      <h3 class="p-name">Organisational Knowledge Graph</h3>
-      <div class="p-meta"><span class="p-meta-badge p-meta-personal" data-i18n="badge_personal">Spare time project</span></div>
-      <p class="p-desc" data-i18n="p_kg">Communication network from the Enron dataset — PageRank, betweenness centrality, community detection, LDA topic modelling, and an interactive PyVis graph.</p>
-      <div class="p-stack"><span class="p-pill">NetworkX</span><span class="p-pill">scikit-learn</span><span class="p-pill">LDA</span><span class="p-pill">PyVis</span></div>
-    </a>
+        <a href="https://github.com/Mathias1801/Front-end_and_Back-end_Dashboard" target="_blank" class="p-card reveal">
+          <div class="p-top"><span class="p-tag">Full-Stack</span><span class="p-arrow">↗</span></div>
+          <h3 class="p-name">Aurum Tempus</h3>
+          <p class="p-desc" data-i18n="p_aurum">End-to-end luxury e-commerce portfolio — FastAPI backend, SQLite database, synthetic data pipeline, KMeans/RF/GBM ML models, and a static BI dashboard on GitHub Pages.</p>
+          <div class="p-stack"><span class="p-pill">FastAPI</span><span class="p-pill">scikit-learn</span><span class="p-pill">SQLite</span><span class="p-pill">Streamlit</span><span class="p-pill">Docker</span></div>
+        </a>
 
-    <a href="https://github.com/Mathias1801/Front-end_and_Back-end_Dashboard" target="_blank" class="p-card reveal">
-      <div class="p-top"><span class="p-tag">Full-Stack</span><span class="p-arrow">↗</span></div>
-      <h3 class="p-name">Aurum Tempus</h3>
-      <div class="p-meta"><span class="p-meta-badge p-meta-personal" data-i18n="badge_personal">Spare time project</span></div>
-      <p class="p-desc" data-i18n="p_aurum">End-to-end luxury e-commerce portfolio — FastAPI backend, SQLite database, synthetic data pipeline, KMeans/RF/GBM ML models, and a static BI dashboard on GitHub Pages.</p>
-      <div class="p-stack"><span class="p-pill">FastAPI</span><span class="p-pill">scikit-learn</span><span class="p-pill">SQLite</span><span class="p-pill">Streamlit</span><span class="p-pill">Docker</span></div>
-    </a>
+        <a href="https://github.com/Mathias1801/Analysis_with_Docker" target="_blank" class="p-card reveal">
+          <div class="p-top"><span class="p-tag">Time Series</span><span class="p-arrow">↗</span></div>
+          <h3 class="p-name" data-i18n="p_wind_name">Wind &amp; Solar Causality Analysis</h3>
+          <p class="p-desc" data-i18n="p_wind">Granger causality analysis of Danish renewable energy vs. electricity spot prices — VAR modelling, impulse response functions, and a Dockerised FastAPI results service.</p>
+          <div class="p-stack"><span class="p-pill">statsmodels</span><span class="p-pill">FastAPI</span><span class="p-pill">Docker</span><span class="p-pill">Energinet API</span></div>
+        </a>
 
-    <a href="https://github.com/Mathias1801/Analysis_with_Docker" target="_blank" class="p-card reveal">
-      <div class="p-top"><span class="p-tag">Time Series</span><span class="p-arrow">↗</span></div>
-      <h3 class="p-name" data-i18n="p_wind_name">Wind &amp; Solar Causality Analysis</h3>
-      <div class="p-meta"><span class="p-meta-badge p-meta-personal" data-i18n="badge_personal">Spare time project</span></div>
-      <p class="p-desc" data-i18n="p_wind">Granger causality analysis of Danish renewable energy vs. electricity spot prices — VAR modelling, impulse response functions, and a Dockerised FastAPI results service.</p>
-      <div class="p-stack"><span class="p-pill">statsmodels</span><span class="p-pill">FastAPI</span><span class="p-pill">Docker</span><span class="p-pill">Energinet API</span></div>
-    </a>
+        <a href="https://github.com/Mathias1801/Haandvaerker_AI_Consultation" target="_blank" class="p-card reveal">
+          <div class="p-top"><span class="p-tag">LLM · Streamlit</span><span class="p-arrow">↗</span></div>
+          <h3 class="p-name" data-i18n="p_msg_name">Customer Message Generator</h3>
+          <p class="p-desc" data-i18n="p_msg">Two-stage Gemini pipeline classifying customer region and emotional type, retrieving behavioural context, and generating a personalised outreach message in a tradesperson's voice.</p>
+          <div class="p-stack"><span class="p-pill">Gemini</span><span class="p-pill">Streamlit</span><span class="p-pill">Prompt Engineering</span></div>
+        </a>
 
-    <a href="https://github.com/Mathias1801/Haandvaerker_AI_Consultation" target="_blank" class="p-card reveal">
-      <div class="p-top"><span class="p-tag">LLM · Streamlit</span><span class="p-arrow">↗</span></div>
-      <h3 class="p-name" data-i18n="p_msg_name">Customer Message Generator</h3>
-      <div class="p-meta"><span class="p-meta-badge p-meta-personal" data-i18n="badge_personal">Spare time project</span></div>
-      <p class="p-desc" data-i18n="p_msg">Two-stage Gemini pipeline classifying customer region and emotional type, retrieving behavioural context, and generating a personalised outreach message in a tradesperson's voice.</p>
-      <div class="p-stack"><span class="p-pill">Gemini</span><span class="p-pill">Streamlit</span><span class="p-pill">Prompt Engineering</span></div>
-    </a>
+      </div>
+    </div>
 
   </div>
 </section>
@@ -1402,6 +1417,8 @@ const T = {
     collab_consumer_name:"Consumer Interviews",
     collab_consumer:"Facilitated consumer interviews across multiple marketing and value-focused projects — translating consumer insights into analytical frameworks and business-oriented recommendations.",
     s_projects:"Projects",
+    proj_sub_academic:"Academic Projects",
+    proj_sub_spare:"Spare Time Projects",
     p_aurum:"End-to-end luxury e-commerce portfolio — FastAPI backend, SQLite database, synthetic data pipeline, KMeans/RF/GBM ML models, and a static BI dashboard on GitHub Pages.",
     p_sust:"Automated weekly pipeline fetching sustainability news, summarising with Gemini 2.5, and generating strategic business consultations — orchestrated by GitHub Actions.",
     p_emp:"RAG chat application for internal documents — OpenAI embeddings in ChromaDB, GPT-4o grounded generation, and a FastAPI backend.",
@@ -1481,6 +1498,8 @@ const T = {
     collab_consumer_name:"Forbrugerinterviews",
     collab_consumer:"Faciliterede forbrugerinterviews på tværs af flere marketing- og værdifokuserede projekter — oversatte forbrugerindsigter til analytiske rammer og forretningsorienterede anbefalinger.",
     s_projects:"Udvalgte projekter",
+    proj_sub_academic:"Akademiske projekter",
+    proj_sub_spare:"Fritidsprojekter",
     p_aurum:"End-to-end luksus e-handelsportfolio — FastAPI-backend, SQLite-database, syntetisk datapipeline, KMeans/RF/GBM ML-modeller og et statisk BI-dashboard på GitHub Pages.",
     p_sust:"Automatiseret ugentlig pipeline, der henter bæredygtighedsnyheder, opsummerer med Gemini 2.5 og genererer strategiske forretningskonsultationer — orkestreret via GitHub Actions.",
     p_emp:"RAG-chatapplikation til interne dokumenter — OpenAI-embeddings i ChromaDB, GPT-4o forankret tekstgenerering og en FastAPI-backend.",
