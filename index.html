@@ -26,10 +26,8 @@
   --gold-light: #b8864a;
   --gold-tint:  #ede3d2;
 }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-
 body {
   background: var(--ivory);
   color: var(--ink);
@@ -38,7 +36,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
-
 body::after {
   content: '';
   position: fixed;
@@ -47,7 +44,6 @@ body::after {
   pointer-events: none;
   z-index: 9998;
 }
-
 /* ── NAV ── */
 nav {
   position: fixed;
@@ -62,7 +58,6 @@ nav {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--brown-rule);
 }
-
 .nav-logo {
   font-family: 'Lora', serif;
   font-size: 0.88rem;
@@ -70,18 +65,15 @@ nav {
   color: var(--brown);
   letter-spacing: 0.01em;
 }
-
 .nav-logo em {
   font-style: italic;
   font-weight: 400;
   color: var(--gold);
 }
-
 .nav-center {
   display: flex;
   list-style: none;
 }
-
 .nav-center a {
   display: block;
   padding: 0 1.1rem;
@@ -96,15 +88,12 @@ nav {
   transition: color 0.2s;
   border-bottom: 2px solid transparent;
 }
-
 .nav-center a:hover { color: var(--brown); border-bottom-color: var(--gold); }
-
 .nav-right {
   display: flex;
   align-items: center;
   gap: 0.7rem;
 }
-
 .nav-btn {
   display: inline-flex;
   align-items: center;
@@ -120,31 +109,26 @@ nav {
   cursor: pointer;
   border: none;
 }
-
 .nav-btn-primary {
   background: var(--brown);
   color: var(--ivory);
   border: 1px solid var(--brown);
 }
-
 .nav-btn-primary:hover {
   background: var(--brown-mid);
   border-color: var(--brown-mid);
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(61,43,31,0.2);
 }
-
 .nav-btn-ghost {
   background: transparent;
   color: var(--brown-light);
   border: 1px solid var(--brown-rule);
 }
-
 .nav-btn-ghost:hover {
   border-color: var(--brown-mid);
   color: var(--brown);
 }
-
 .lang-toggle {
   display: flex;
   border: 2px solid var(--brown-rule);
@@ -152,7 +136,6 @@ nav {
   border-radius: 3px;
   box-shadow: 0 1px 4px rgba(61,43,31,0.1);
 }
-
 .lang-btn {
   padding: 0.48rem 1rem;
   font-family: 'DM Mono', monospace;
@@ -165,15 +148,12 @@ nav {
   color: var(--muted);
   transition: all 0.18s;
 }
-
 .lang-btn.active {
   background: var(--brown);
   color: var(--ivory);
   font-weight: 500;
 }
-
 .lang-btn:not(.active):hover { background: var(--parchment2); color: var(--brown); }
-
 /* ── HERO ── */
 #hero {
   min-height: 100vh;
@@ -181,7 +161,6 @@ nav {
   grid-template-columns: 58% 42%;
   padding-top: 62px;
 }
-
 .hero-left {
   padding: 7rem 4rem 6rem 3rem;
   display: flex;
@@ -191,7 +170,6 @@ nav {
   opacity: 0;
   animation: fadeUp 0.9s 0.1s ease forwards;
 }
-
 .hero-issue-row {
   display: flex;
   align-items: center;
@@ -199,7 +177,6 @@ nav {
   margin-bottom: 2rem;
   flex-wrap: wrap;
 }
-
 .hero-status-pill {
   display: inline-flex;
   align-items: center;
@@ -213,7 +190,6 @@ nav {
   color: #2d6b35;
   text-transform: uppercase;
 }
-
 .hero-status-dot {
   width: 6px;
   height: 6px;
@@ -221,12 +197,10 @@ nav {
   background: #3a9e45;
   animation: blink 2s infinite;
 }
-
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
 }
-
 .hero-issue {
   font-family: 'DM Mono', monospace;
   font-size: 0.6rem;
@@ -237,7 +211,6 @@ nav {
   align-items: center;
   gap: 0.75rem;
 }
-
 .hero-issue::before {
   content: '';
   display: block;
@@ -245,7 +218,6 @@ nav {
   height: 1px;
   background: var(--gold);
 }
-
 .hero-name {
   font-family: 'Libre Baskerville', serif;
   font-size: clamp(2.8rem, 5vw, 5rem);
@@ -255,7 +227,6 @@ nav {
   color: var(--ink);
   margin-bottom: 0.2rem;
 }
-
 .hero-surname {
   font-family: 'Libre Baskerville', serif;
   font-size: clamp(2.8rem, 5vw, 5rem);
@@ -265,7 +236,6 @@ nav {
   line-height: 1.05;
   margin-bottom: 2.25rem;
 }
-
 .hero-degree-badge {
   display: inline-flex;
   align-items: center;
@@ -276,14 +246,12 @@ nav {
   margin-bottom: 2rem;
   width: fit-content;
 }
-
 .hero-degree-badge span {
   font-family: 'DM Mono', monospace;
   font-size: 0.65rem;
   letter-spacing: 0.05em;
   color: var(--brown-mid);
 }
-
 .hero-bio {
   font-size: 1rem;
   color: var(--muted);
@@ -291,7 +259,6 @@ nav {
   max-width: 48ch;
   margin-bottom: 2.75rem;
 }
-
 .hero-ornament {
   display: flex;
   align-items: center;
@@ -301,7 +268,6 @@ nav {
   font-size: 0.8rem;
   letter-spacing: 0.3em;
 }
-
 .hero-ornament::before,
 .hero-ornament::after {
   content: '';
@@ -309,13 +275,11 @@ nav {
   height: 1px;
   background: var(--parchment3);
 }
-
 .hero-contacts {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-
 .hc-row {
   display: flex;
   align-items: baseline;
@@ -323,9 +287,7 @@ nav {
   padding: 0.8rem 0;
   border-bottom: 1px solid var(--parchment2);
 }
-
 .hc-row:first-child { border-top: 1px solid var(--parchment2); }
-
 .hc-label {
   font-family: 'DM Mono', monospace;
   font-size: 0.54rem;
@@ -334,7 +296,6 @@ nav {
   color: var(--muted-light);
   min-width: 5.5rem;
 }
-
 .hc-val {
   font-family: 'Lora', serif;
   font-size: 0.88rem;
@@ -342,9 +303,7 @@ nav {
   text-decoration: none;
   transition: color 0.2s;
 }
-
 .hc-val:hover { color: var(--gold); }
-
 /* ── HERO PHOTO ── */
 .hero-photo {
   width: 100%;
@@ -353,7 +312,6 @@ nav {
   border: 1px solid var(--parchment3);
   align-self: center;
 }
-
 .hero-photo img {
   width: 100%;
   height: 100%;
@@ -362,7 +320,6 @@ nav {
   display: block;
   filter: sepia(12%) contrast(1.04);
 }
-
 .hero-right {
   background: var(--parchment);
   padding: 7rem 3rem 6rem 3.5rem;
@@ -374,12 +331,10 @@ nav {
   opacity: 0;
   animation: fadeUp 0.9s 0.3s ease forwards;
 }
-
 .hero-pull {
   border-left: 3px solid var(--gold);
   padding-left: 1.75rem;
 }
-
 .hero-pull-text {
   font-family: 'Lora', serif;
   font-size: 1.2rem;
@@ -387,7 +342,6 @@ nav {
   color: var(--brown-mid);
   line-height: 1.75;
 }
-
 .hero-pull-attr {
   font-family: 'DM Mono', monospace;
   font-size: 0.56rem;
@@ -396,7 +350,6 @@ nav {
   color: var(--muted-light);
   margin-top: 0.75rem;
 }
-
 .hero-stats {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -404,19 +357,15 @@ nav {
   background: var(--parchment3);
   border: 1px solid var(--parchment3);
 }
-
 .h-stat {
   background: var(--parchment);
   padding: 1.5rem 1.25rem;
 }
-
 .h-stat-link {
   cursor: pointer;
   transition: background 0.2s;
 }
-
 .h-stat-link:hover { background: var(--parchment2); }
-
 .h-stat-num {
   font-family: 'Libre Baskerville', serif;
   font-size: 2.4rem;
@@ -425,7 +374,6 @@ nav {
   line-height: 1;
   display: block;
 }
-
 .h-stat-label {
   font-family: 'DM Mono', monospace;
   font-size: 0.54rem;
@@ -435,24 +383,20 @@ nav {
   display: block;
   margin-top: 0.3rem;
 }
-
 .h-stat-wide {
   grid-column: span 3;
   background: var(--parchment);
 }
-
 .h-stat-label-top {
   display: block;
   margin-bottom: 0.75rem;
   margin-top: 0;
 }
-
 .h-stat-keywords {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
 }
-
 .h-stat-kw {
   font-family: 'DM Mono', monospace;
   font-size: 0.56rem;
@@ -462,34 +406,29 @@ nav {
   border: 1px solid var(--parchment3);
   padding: 0.25rem 0.6rem;
 }
-
 /* ── SHARED SECTION STYLES ── */
 .sec-ivory {
   background: var(--ivory);
   padding: 7rem 3rem;
   border-top: 1px solid var(--parchment2);
 }
-
 .sec-parchment {
   background: var(--parchment);
   padding: 7rem 3rem;
   border-top: 1px solid var(--parchment2);
 }
-
 .s-header {
   display: flex;
   align-items: baseline;
   gap: 1.25rem;
   margin-bottom: 4rem;
 }
-
 .s-num {
   font-family: 'DM Mono', monospace;
   font-size: 0.56rem;
   color: var(--gold);
   letter-spacing: 0.12em;
 }
-
 .s-title {
   font-family: 'Libre Baskerville', serif;
   font-size: clamp(1.6rem, 2.8vw, 2.4rem);
@@ -497,21 +436,18 @@ nav {
   color: var(--ink);
   letter-spacing: -0.01em;
 }
-
 .s-line {
   flex: 1;
   height: 1px;
   background: var(--parchment3);
   margin-left: 0.75rem;
 }
-
 /* ── PROJECTS ── */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1.5rem;
 }
-
 .p-card {
   background: var(--ivory);
   border: 1px solid var(--parchment2);
@@ -525,7 +461,6 @@ nav {
   position: relative;
   overflow: hidden;
 }
-
 .p-card::before {
   content: '';
   position: absolute;
@@ -536,18 +471,14 @@ nav {
   transform-origin: left;
   transition: transform 0.35s ease;
 }
-
 .p-card:hover {
   border-color: var(--brown-rule);
   box-shadow: 0 6px 28px rgba(61,43,31,0.1);
   transform: translateY(-3px);
 }
-
 .p-card:hover::before { transform: scaleX(1); }
 .p-card:hover .p-arrow { color: var(--gold); transform: translate(3px,-3px); }
-
 .p-top { display: flex; justify-content: space-between; align-items: center; }
-
 .p-tag {
   font-family: 'DM Mono', monospace;
   font-size: 0.54rem;
@@ -558,20 +489,15 @@ nav {
   border: 1px solid var(--parchment3);
   padding: 0.2rem 0.6rem;
 }
-
 .p-arrow { color: var(--parchment3); font-size: 1rem; transition: color 0.2s, transform 0.2s; }
-
 .p-name {
   font-family: 'Lora', serif;
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--ink);
 }
-
 .p-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.75; flex: 1; }
-
 .p-stack { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.2rem; }
-
 .p-pill {
   font-family: 'DM Mono', monospace;
   font-size: 0.52rem;
@@ -581,7 +507,6 @@ nav {
   padding: 0.18rem 0.52rem;
   background: var(--parchment);
 }
-
 .p-wip {
   background: repeating-linear-gradient(
     -50deg,
@@ -591,17 +516,14 @@ nav {
     var(--parchment) 14px
   );
 }
-
 .p-wip .p-tag { color: #4a7c59; background: #eef5f1; border-color: #c4dccb; }
 .p-wip::before { background: linear-gradient(90deg, #4a7c59, #7cb898); }
-
 .p-meta {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-
 .p-meta-badge {
   font-family: 'DM Mono', monospace;
   font-size: 0.52rem;
@@ -609,13 +531,11 @@ nav {
   padding: 0.2rem 0.55rem;
   border: 1px solid;
 }
-
 .p-meta-academic {
   color: var(--brown-mid);
   background: var(--gold-tint);
   border-color: var(--parchment3);
 }
-
 .p-meta-grade {
   font-family: 'DM Mono', monospace;
   font-size: 0.52rem;
@@ -626,21 +546,18 @@ nav {
   padding: 0.2rem 0.55rem;
   font-weight: 500;
 }
-
 .p-meta-pending {
   color: var(--muted-light);
   background: transparent;
   border-color: var(--parchment2);
   font-style: italic;
 }
-
 /* ── COLLABORATION ── */
 .collab-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
 }
-
 .collab-card {
   background: var(--ivory);
   border: 1px solid var(--parchment2);
@@ -652,7 +569,6 @@ nav {
   position: relative;
   overflow: hidden;
 }
-
 .collab-card::before {
   content: '';
   position: absolute;
@@ -663,17 +579,13 @@ nav {
   transform-origin: left;
   transition: transform 0.35s ease;
 }
-
 .collab-card:hover {
   border-color: var(--brown-rule);
   box-shadow: 0 6px 24px rgba(46,31,20,0.09);
   transform: translateY(-2px);
 }
-
 .collab-card:hover::before { transform: scaleX(1); }
-
 .collab-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
-
 .collab-type {
   font-family: 'DM Mono', monospace;
   font-size: 0.54rem;
@@ -685,9 +597,7 @@ nav {
   padding: 0.2rem 0.6rem;
   white-space: nowrap;
 }
-
 .collab-icon { font-size: 1.2rem; opacity: 0.5; }
-
 .collab-name {
   font-family: 'Lora', serif;
   font-size: 1.05rem;
@@ -695,9 +605,7 @@ nav {
   color: var(--ink);
   line-height: 1.3;
 }
-
 .collab-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.75; }
-
 .collab-context {
   font-family: 'DM Mono', monospace;
   font-size: 0.56rem;
@@ -708,14 +616,12 @@ nav {
   padding-top: 0.75rem;
   border-top: 1px solid var(--parchment2);
 }
-
 /* ── SKILLS ── */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
 }
-
 .skill-card {
   background: var(--ivory);
   border: 1px solid var(--parchment2);
@@ -723,13 +629,11 @@ nav {
   transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
   position: relative;
 }
-
 .skill-card:hover {
   box-shadow: 0 6px 24px rgba(61,43,31,0.09);
   transform: translateY(-2px);
   border-color: var(--brown-rule);
 }
-
 .skill-n {
   font-family: 'Libre Baskerville', serif;
   font-size: 3rem;
@@ -740,10 +644,8 @@ nav {
   top: 1rem; right: 1.5rem;
   transition: color 0.25s;
 }
-
 .skill-card:hover .skill-n { color: var(--parchment3); }
 .skill-icon { font-size: 1.3rem; margin-bottom: 0.75rem; display: block; }
-
 .skill-name {
   font-family: 'Lora', serif;
   font-size: 1.05rem;
@@ -751,9 +653,7 @@ nav {
   color: var(--ink);
   margin-bottom: 0.5rem;
 }
-
 .skill-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.78; }
-
 /* ── ABOUT ── */
 .about-layout {
   display: grid;
@@ -761,11 +661,9 @@ nav {
   gap: 5rem;
   align-items: start;
 }
-
 .about-body p { font-size: 0.95rem; color: var(--ink-mid); line-height: 1.9; }
 .about-body p + p { margin-top: 1.25rem; }
 .about-body strong { color: var(--brown); font-weight: 600; }
-
 .about-aside {
   display: flex;
   flex-direction: column;
@@ -773,9 +671,7 @@ nav {
   background: var(--parchment3);
   border: 1px solid var(--parchment3);
 }
-
 .aside-stat { background: var(--ivory); padding: 1.5rem; }
-
 .aside-num {
   font-family: 'Libre Baskerville', serif;
   font-size: 2.4rem;
@@ -785,7 +681,6 @@ nav {
   display: block;
   margin-bottom: 0.3rem;
 }
-
 .aside-label {
   font-family: 'DM Mono', monospace;
   font-size: 0.56rem;
@@ -793,10 +688,8 @@ nav {
   text-transform: uppercase;
   color: var(--muted-light);
 }
-
 /* ── EDUCATION / EXPERIENCE ── */
 .edu-list { display: flex; flex-direction: column; }
-
 .edu-item {
   display: grid;
   grid-template-columns: 10rem 1fr;
@@ -805,9 +698,7 @@ nav {
   border-bottom: 1px solid var(--parchment2);
   align-items: start;
 }
-
 .edu-item:first-child { border-top: 1px solid var(--parchment2); }
-
 .edu-period {
   font-family: 'DM Mono', monospace;
   font-size: 0.6rem;
@@ -816,7 +707,6 @@ nav {
   padding-top: 0.25rem;
   line-height: 1.6;
 }
-
 .edu-type-badge {
   display: inline-block;
   font-family: 'DM Mono', monospace;
@@ -829,7 +719,6 @@ nav {
   padding: 0.15rem 0.5rem;
   margin-bottom: 0.5rem;
 }
-
 .edu-degree {
   font-family: 'Lora', serif;
   font-size: 1.15rem;
@@ -837,7 +726,6 @@ nav {
   color: var(--ink);
   margin-bottom: 0.2rem;
 }
-
 .edu-inst {
   font-family: 'DM Mono', monospace;
   font-size: 0.58rem;
@@ -846,16 +734,13 @@ nav {
   color: var(--brown-light);
   margin-bottom: 0.7rem;
 }
-
 .edu-note { font-size: 0.83rem; color: var(--muted); line-height: 1.72; max-width: 60ch; }
-
 .edu-sidebar {
   margin-top: 0.75rem;
   padding: 0.75rem 1rem;
   border-left: 2px solid var(--gold);
   background: var(--gold-tint);
 }
-
 .edu-sidebar-text {
   font-family: 'Lora', serif;
   font-size: 0.8rem;
@@ -863,7 +748,6 @@ nav {
   color: var(--brown-mid);
   line-height: 1.6;
 }
-
 /* ── FOOTER ── */
 footer {
   background: var(--brown);
@@ -873,16 +757,13 @@ footer {
   align-items: center;
   border-top: 3px solid var(--gold);
 }
-
 .footer-left {
   font-family: 'DM Mono', monospace;
   font-size: 0.58rem;
   color: rgba(250,247,242,0.45);
   letter-spacing: 0.07em;
 }
-
 .footer-right { display: flex; gap: 1.75rem; }
-
 .footer-right a {
   font-family: 'DM Mono', monospace;
   font-size: 0.58rem;
@@ -892,23 +773,18 @@ footer {
   text-decoration: none;
   transition: color 0.2s;
 }
-
 .footer-right a:hover { color: var(--gold-light); }
-
 /* ── ANIMATIONS ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(18px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 .reveal {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
-
 .reveal.visible { opacity: 1; transform: translateY(0); }
-
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav { padding: 0 1.25rem; }
@@ -924,7 +800,6 @@ footer {
 </style>
 </head>
 <body>
-
 <!-- NAV -->
 <nav>
   <span class="nav-logo">Mathias S. Juul</span>
@@ -949,7 +824,6 @@ footer {
     </div>
   </div>
 </nav>
-
 <!-- HERO -->
 <section id="hero">
   <div class="hero-left">
@@ -966,7 +840,7 @@ footer {
       <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--gold)"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
       <span data-i18n="hero_degree">Cand. merc. Business Data Science</span>
     </div>
-    <p class="hero-bio" data-i18n="hero_bio">Business Data Science profile with a commercial mindset. I bring a unique combination of academic rigour and practical business understanding — shaped by an entrepreneurial upbringing and experience from strategic board work. I always apply coding in an organisational context, structuring data to create real bottom-line value. A strong collaborator who thrives in iterative processes where the team's collective competencies come into play.</p>
+    <p class="hero-bio" data-i18n="hero_bio">Business Data Science profile with a commercial mindset, where academic theory meets business understanding. Data should be structured and evaluated so it creates real bottom-line value — not just technically correct results. I've learned to treat evaluation as a fixed part of the work, so I can be honest about what a solution can actually do and where its limits lie. A strong collaborator who thrives in iterative processes where the whole team's competencies come into play.</p>
     <div class="hero-ornament">✦</div>
     <div class="hero-contacts">
       <div class="hc-row">
@@ -987,13 +861,12 @@ footer {
       </div>
     </div>
   </div>
-
   <div class="hero-right">
     <div class="hero-photo">
       <img src="Profilbillede.png" alt="Mathias Salomonsen Juul">
     </div>
     <div class="hero-pull">
-      <p class="hero-pull-text" data-i18n="hero_quote">"Data is only powerful when you understand the business. With a background in entrepreneurship and strategic board governance, I bridge the gap between technical expertise and organisational reality."</p>
+      <p class="hero-pull-text" data-i18n="hero_quote">"Data is only powerful when you're honest about what it can and can't do. I care as much about evaluating a solution's limits as building it — and the best results always come from the whole team's competencies working together."</p>
       <p class="hero-pull-attr">— Mathias Salomonsen Juul</p>
     </div>
     <div class="hero-stats">
@@ -1024,7 +897,6 @@ footer {
     </div>
   </div>
 </section>
-
 <!-- ACADEMIC PROJECTS -->
 <section id="projects-academic" class="sec-parchment">
   <div class="s-header reveal">
@@ -1033,7 +905,6 @@ footer {
     <div class="s-line"></div>
   </div>
   <div class="project-grid">
-
     <a href="https://github.com/Mathias1801/The_Clinical_Guide/" target="_blank" class="p-card reveal">
       <div class="p-top"><span class="p-tag">Clinical NLP</span><span class="p-arrow">↗</span></div>
       <h3 class="p-name">CDSS — Clinical NLP</h3>
@@ -1042,7 +913,6 @@ footer {
       <p style="font-family:'DM Mono',monospace;font-size:0.52rem;letter-spacing:0.06em;color:var(--muted-light);margin-top:-0.2rem;" data-i18n="p_cdss_collab">Developed in collaboration with Esben Münster Graahede.</p>
       <div class="p-stack"><span class="p-pill">GPT-4o</span><span class="p-pill">Clinical NLP</span><span class="p-pill">DSR</span><span class="p-pill">Danish</span></div>
     </a>
-
     <a href="https://github.com/Mathias1801/File_to_Podcast" target="_blank" class="p-card reveal">
       <div class="p-top"><span class="p-tag">Generative AI</span><span class="p-arrow">↗</span></div>
       <h3 class="p-name">PDF-to-Podcast Pipeline</h3>
@@ -1050,7 +920,6 @@ footer {
       <p class="p-desc" data-i18n="p_pdf">Transforms academic PDFs into two-host podcast audio — Llama 3.1 for script generation, Suno Bark TTS for synthesis, plus a knowledge graph and quiz generator.</p>
       <div class="p-stack"><span class="p-pill">Llama 3.1</span><span class="p-pill">Bark TTS</span><span class="p-pill">Hugging Face</span></div>
     </a>
-
     <a href="https://github.com/Mathias1801/Sustainability_Consultant" target="_blank" class="p-card reveal">
       <div class="p-top"><span class="p-tag">LLM Pipeline</span><span class="p-arrow">↗</span></div>
       <h3 class="p-name">Sustainability Consultant</h3>
@@ -1058,7 +927,6 @@ footer {
       <p class="p-desc" data-i18n="p_sust">Automated weekly pipeline fetching sustainability news, summarising with Gemini 2.5, and generating strategic business consultations — orchestrated by GitHub Actions.</p>
       <div class="p-stack"><span class="p-pill">Gemini 2.5</span><span class="p-pill">GitHub Actions</span><span class="p-pill">FastAPI</span><span class="p-pill">SQLite</span></div>
     </a>
-
     <a href="https://github.com/Mathias1801/Analytical_example/tree/main" target="_blank" class="p-card reveal">
       <div class="p-top"><span class="p-tag">Statistics · ML</span><span class="p-arrow">↗</span></div>
       <h3 class="p-name">Kiva Microfinance Analysis</h3>
@@ -1066,10 +934,9 @@ footer {
       <p class="p-desc" data-i18n="p_kiva">End-to-end analysis of the Kiva microfinance dataset — data cleaning and EDA, K-means and hierarchical clustering, an SVD recommendation prototype, and regression models (Linear Regression, Random Forest, XGBoost) with SHAP explainability.</p>
       <div class="p-stack"><span class="p-pill">scikit-learn</span><span class="p-pill">XGBoost</span><span class="p-pill">SHAP</span><span class="p-pill">EDA</span></div>
     </a>
-    
+
   </div>
 </section>
-
 <!-- SPARE TIME PROJECTS -->
 <section id="projects-spare" class="sec-ivory">
   <div class="s-header reveal">
@@ -1078,45 +945,38 @@ footer {
     <div class="s-line"></div>
   </div>
   <div class="project-grid">
-
     <a href="https://github.com/Mathias1801/Internal_Org_Chatbot" target="_blank" class="p-card reveal">
       <div class="p-top"><span class="p-tag">NLP · RAG</span><span class="p-arrow">↗</span></div>
       <h3 class="p-name">Employee Assistant</h3>
       <p class="p-desc" data-i18n="p_emp">RAG chat application for internal documents — OpenAI embeddings in ChromaDB, GPT-4o grounded generation, and a FastAPI backend.</p>
       <div class="p-stack"><span class="p-pill">OpenAI</span><span class="p-pill">ChromaDB</span><span class="p-pill">FastAPI</span><span class="p-pill">RAG</span></div>
     </a>
-
     <a href="https://github.com/Mathias1801/Organization_Communication" target="_blank" class="p-card reveal">
       <div class="p-top"><span class="p-tag">Graph · NLP</span><span class="p-arrow">↗</span></div>
       <h3 class="p-name">Organisational Knowledge Graph</h3>
       <p class="p-desc" data-i18n="p_kg">Communication network from the Enron dataset — PageRank, betweenness centrality, community detection, LDA topic modelling, and an interactive PyVis graph.</p>
       <div class="p-stack"><span class="p-pill">NetworkX</span><span class="p-pill">scikit-learn</span><span class="p-pill">LDA</span><span class="p-pill">PyVis</span></div>
     </a>
-
     <a href="https://github.com/Mathias1801/Front-end_and_Back-end_Dashboard" target="_blank" class="p-card reveal">
       <div class="p-top"><span class="p-tag">Full-Stack</span><span class="p-arrow">↗</span></div>
       <h3 class="p-name">Aurum Tempus</h3>
       <p class="p-desc" data-i18n="p_aurum">End-to-end luxury e-commerce portfolio — FastAPI backend, SQLite database, synthetic data pipeline, KMeans/RF/GBM ML models, and a static BI dashboard on GitHub Pages.</p>
       <div class="p-stack"><span class="p-pill">FastAPI</span><span class="p-pill">scikit-learn</span><span class="p-pill">SQLite</span><span class="p-pill">Streamlit</span><span class="p-pill">Docker</span></div>
     </a>
-
     <a href="https://github.com/Mathias1801/Analysis_with_Docker" target="_blank" class="p-card reveal">
       <div class="p-top"><span class="p-tag">Time Series</span><span class="p-arrow">↗</span></div>
       <h3 class="p-name" data-i18n="p_wind_name">Wind &amp; Solar Causality Analysis</h3>
       <p class="p-desc" data-i18n="p_wind">Granger causality analysis of Danish renewable energy vs. electricity spot prices — VAR modelling, impulse response functions, and a Dockerised FastAPI results service.</p>
       <div class="p-stack"><span class="p-pill">statsmodels</span><span class="p-pill">FastAPI</span><span class="p-pill">Docker</span><span class="p-pill">Energinet API</span></div>
     </a>
-
     <a href="https://github.com/Mathias1801/Haandvaerker_AI_Consultation" target="_blank" class="p-card reveal">
       <div class="p-top"><span class="p-tag">LLM · Streamlit</span><span class="p-arrow">↗</span></div>
       <h3 class="p-name" data-i18n="p_msg_name">Customer Message Generator</h3>
       <p class="p-desc" data-i18n="p_msg">Two-stage Gemini pipeline classifying customer region and emotional type, retrieving behavioural context, and generating a personalised outreach message in a tradesperson's voice.</p>
       <div class="p-stack"><span class="p-pill">Gemini</span><span class="p-pill">Streamlit</span><span class="p-pill">Prompt Engineering</span></div>
     </a>
-
   </div>
 </section>
-
 <!-- COLLABORATION -->
 <section id="collaboration" class="sec-parchment">
   <div class="s-header reveal">
@@ -1125,7 +985,6 @@ footer {
     <div class="s-line"></div>
   </div>
   <div class="collab-grid">
-
     <div class="collab-card reveal">
       <div class="collab-top">
         <span class="collab-type" data-i18n="collab_laege_short">Lægehåndbogen &amp; Patienthåndbogen</span>
@@ -1135,7 +994,6 @@ footer {
       <p class="collab-desc" data-i18n="collab_laege">Formal collaboration providing access to validated clinical knowledge for the CDSS system — carried out on behalf of Danske Regioner and Lægeforeningen.</p>
       <p class="collab-context" data-i18n="collab_type_thesis">Master's Thesis · AAU</p>
     </div>
-
     <div class="collab-card reveal">
       <div class="collab-top">
         <span class="collab-type" data-i18n="collab_cdss_org">Healthcare Professionals</span>
@@ -1145,7 +1003,6 @@ footer {
       <p class="collab-desc" data-i18n="collab_cdss">Structured interviews with doctors and nurses to gather domain knowledge and employee perspectives — directly shaping the requirements and evaluation criteria of the CDSS clinical NLP system.</p>
       <p class="collab-context" data-i18n="collab_type_thesis">Master's Thesis · AAU</p>
     </div>
-
     <div class="collab-card reveal">
       <div class="collab-top">
         <span class="collab-type">Shaping New Tomorrow Holding ApS</span>
@@ -1155,7 +1012,6 @@ footer {
       <p class="collab-desc" data-i18n="collab_snt">Final bachelor's project conducted in collaboration with Shaping New Tomorrow Holding ApS — applying business analytics and organisational analysis to a real company context.</p>
       <p class="collab-context" data-i18n="collab_type_bachelor">Bachelor Project · AAU</p>
     </div>
-
     <div class="collab-card reveal">
       <div class="collab-top">
         <span class="collab-type">Neogrid Technologies ApS</span>
@@ -1165,7 +1021,6 @@ footer {
       <p class="collab-desc" data-i18n="collab_neo">Semester project carried out in partnership with Neogrid Technologies ApS — combining data analysis and business strategy in a live technology company setting.</p>
       <p class="collab-context" data-i18n="collab_type_5sem">5th Semester Project · AAU</p>
     </div>
-
     <div class="collab-card reveal">
       <div class="collab-top">
         <span class="collab-type" data-i18n="collab_consumer_org">Consumers</span>
@@ -1175,10 +1030,8 @@ footer {
       <p class="collab-desc" data-i18n="collab_consumer">Facilitated consumer interviews across multiple marketing and value-focused projects — translating consumer insights into analytical frameworks and business-oriented recommendations.</p>
       <p class="collab-context" data-i18n="collab_type_consumer">Consumer Research · Bachelor's Programme</p>
     </div>
-
   </div>
 </section>
-
 <!-- SKILLS -->
 <section id="skills" class="sec-ivory">
   <div class="s-header reveal">
@@ -1225,7 +1078,6 @@ footer {
     </div>
   </div>
 </section>
-
 <!-- EDUCATION -->
 <section id="education" class="sec-parchment">
   <div class="s-header reveal">
@@ -1234,7 +1086,6 @@ footer {
     <div class="s-line"></div>
   </div>
   <div class="edu-list">
-
     <div class="edu-item reveal">
       <div class="edu-period">
         2023 — 2026
@@ -1249,7 +1100,6 @@ footer {
         </div>
       </div>
     </div>
-
     <div class="edu-item reveal">
       <span class="edu-period">2020 — 2023</span>
       <div>
@@ -1259,7 +1109,6 @@ footer {
         <p class="edu-note" data-i18n="edu_ha">Foundation in business economics, organisational theory, and quantitative methods — the domain context that grounds the data science work.</p>
       </div>
     </div>
-
     <div class="edu-item reveal">
       <span class="edu-period">2017 — 2020</span>
       <div>
@@ -1269,10 +1118,8 @@ footer {
         <p class="edu-note" data-i18n="edu_hhx">Upper secondary education with a business and economics focus — providing the commercial foundation that underpins subsequent academic and professional development.</p>
       </div>
     </div>
-
   </div>
 </section>
-
 <!-- EXPERIENCE -->
 <section id="experience" class="sec-ivory">
   <div class="s-header reveal">
@@ -1281,7 +1128,6 @@ footer {
     <div class="s-line"></div>
   </div>
   <div class="edu-list">
-
     <div class="edu-item reveal">
       <div class="edu-period">2023 — 2024</div>
       <div>
@@ -1291,7 +1137,6 @@ footer {
         <p class="edu-note" data-i18n="exp_gj_desc">Board member at Gade og Juul A/S — contributing strategic oversight and business perspective alongside ongoing academic studies in Business Data Science.</p>
       </div>
     </div>
-
     <div class="edu-item reveal">
       <div class="edu-period">2021 — 2024</div>
       <div>
@@ -1301,7 +1146,6 @@ footer {
         <p class="edu-note" data-i18n="exp_meny_desc">Part-time retail work alongside studies — developing practical customer service and operational experience throughout the bachelor's and master's programmes.</p>
       </div>
     </div>
-
     <div class="edu-item reveal">
       <div class="edu-period">2020 — 2021</div>
       <div>
@@ -1311,10 +1155,8 @@ footer {
         <p class="edu-note" data-i18n="exp_retail_desc">Full-time retail employment during a gap year — building work ethic and commercial awareness prior to commencing university studies.</p>
       </div>
     </div>
-
   </div>
 </section>
-
 <!-- ABOUT -->
 <section id="about" class="sec-parchment">
   <div class="s-header reveal">
@@ -1324,10 +1166,10 @@ footer {
   </div>
   <div class="about-layout">
     <div class="about-body reveal">
-      <p data-i18n="about_p1">I am a <strong>Business Data Science</strong> student at Aalborg University, working toward a <strong>cand. merc.</strong> at the intersection of analytical methods, software engineering, and <strong>commercial thinking</strong> — shaped by an upbringing in an <strong>entrepreneurial environment</strong> and hands-on experience as a <strong>board member</strong> at Gade og Juul A/S.</p>
+      <p data-i18n="about_p1">I hold a <strong>cand. merc.</strong> in <strong>Business Data Science</strong> from Aalborg University, at the intersection of analytical methods, software engineering, and <strong>commercial thinking</strong> — where academic theory meets business understanding. For me, structuring data is only half the job; <strong>evaluating it honestly</strong>, so I can speak plainly about what a solution can do and where its limits lie, is just as important.</p>
       <p data-i18n="about_p2">My project work spans the full stack — statistical modelling, machine learning, <strong>LLM pipelines</strong>, and production deployments — with real industry collaborations including <strong>Neogrid Technologies</strong>, <strong>Shaping New Tomorrow</strong>, and a formal partnership with <strong>Lægehåndbogen &amp; Patienthåndbogen</strong> for my clinical NLP thesis.</p>
-      <p data-i18n="about_p3">I approach problems with a <strong>goal-oriented mindset</strong> and always apply coding in an <strong>organisational context</strong> — grounded by years working in retail alongside my studies, which reinforced my understanding of how <strong>business value</strong> is created at every level of an organisation.</p>
-      <p data-i18n="about_p4">My entire education at <strong>AAU</strong> has been <strong>group-based and problem-driven</strong>, giving me a strong collaborative instinct and the ability to take ownership of a team's progress. My thesis in <strong>clinical NLP</strong> brings it all together — rigorous methodology, real stakeholder collaboration, and practical system design in a high-stakes domain.</p>
+      <p data-i18n="about_p3">I approach problems with a <strong>goal-oriented mindset</strong> and always apply coding in an <strong>organisational context</strong> — grounded by years working in retail alongside my studies, which reinforced my understanding of how <strong>business value</strong> is created at every level of an organisation. Evaluation has become a fixed part of how I work: not just building a solution, but being honest about what it can actually deliver and where its boundaries are.</p>
+      <p data-i18n="about_p4">My entire education at <strong>AAU</strong> has been <strong>group-based and problem-driven</strong>, giving me a strong collaborative instinct and the ability to take co-responsibility for a team's progress and ensure knowledge flows freely between everyone involved. My thesis in <strong>clinical NLP</strong> brings it all together — rigorous methodology, real stakeholder collaboration, and practical system design in a high-stakes domain.</p>
     </div>
     <div class="about-aside reveal">
       <div class="aside-stat">
@@ -1345,7 +1187,6 @@ footer {
     </div>
   </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <span class="footer-left">© Mathias Salomonsen Juul · mathiassjuul@gmail.com · +45 71 72 52 62</span>
@@ -1355,7 +1196,6 @@ footer {
     <a href="mailto:mathiassjuul@gmail.com" data-i18n="nav_contact">Get in touch</a>
   </div>
 </footer>
-
 <script>
 const T = {
   en: {
@@ -1365,8 +1205,8 @@ const T = {
     hero_tag:"Business Data Scientist",
     hero_status:"Open to opportunities",
     hero_degree:"Cand. merc. Business Data Science",
-    hero_bio:"Business Data Science profile with a commercial mindset. I hold a newly completed cand. merc. in Business Data Science, built on methods and tools that were still evolving as I studied them — giving me a genuinely current, cutting-edge skill set. I bring a unique combination of academic rigour and practical business understanding, shaped by an entrepreneurial upbringing and experience from strategic board work. I always apply coding in an organisational context, structuring data to create real bottom-line value. A strong collaborator who thrives in iterative processes where the team's collective competencies come into play.",
-    hero_quote:'"My degree sits at the cutting edge of the field — much of what I studied was developing so fast that textbooks hadn\'t caught up yet. I bring that current, hands-on knowledge to every problem I solve."',
+    hero_bio:"Business Data Science profile with a commercial mindset, where academic theory meets business understanding. I hold a newly completed cand. merc. in Business Data Science, built on methods and tools that were still evolving as I studied them — giving me a genuinely current, cutting-edge skill set. Data should be structured and evaluated so it creates real bottom-line value, not just technically correct results. I've learned to treat evaluation as a fixed part of the work, so I can be honest about what a solution can actually do and where its limits lie. A strong collaborator who thrives in iterative processes where the whole team's competencies come into play.",
+    hero_quote:'"Data is only powerful when you\'re honest about what it can and can\'t do. I care as much about evaluating a solution\'s limits as building it — and the best results always come from the whole team\'s competencies working together."',
     c_email:"Email", c_phone:"Phone", c_location:"Location",
     stat_proj:"Projects", stat_collab:"Collaborations", stat_thesis:"Thesis Domain",
     stat_exp_label:"Practical Experience",
@@ -1416,10 +1256,10 @@ const T = {
     sk_sql:"Relational database design and querying for analytical and transactional use cases. Experience with SQLite and SQLAlchemy ORM — structuring schemas, seeding data, and integrating databases into backend services.",
     sk_ai:"Hands-on with the modern LLM stack — OpenAI, Gemini, and open-source models via Hugging Face. Covers prompt engineering, RAG pipelines, function calling, vector databases, and evaluation workflows across multiple projects.",
     s_about:"About Me",
-    about_p1:"I hold a <strong>cand. merc.</strong> in <strong>Business Data Science</strong> from Aalborg University, at the intersection of analytical methods, software engineering, and <strong>commercial thinking</strong>. The field moved so fast during my studies that textbooks couldn't keep pace — so my knowledge reflects the current state of the discipline, not a snapshot from years ago. This is shaped further by an upbringing in an <strong>entrepreneurial environment</strong> and hands-on experience as a <strong>board member</strong> at Gade og Juul A/S.",
+    about_p1:"I hold a <strong>cand. merc.</strong> in <strong>Business Data Science</strong> from Aalborg University, at the intersection of analytical methods, software engineering, and <strong>commercial thinking</strong>. The field moved so fast during my studies that textbooks couldn't keep pace — so my knowledge reflects the current state of the discipline, not a snapshot from years ago. For me, structuring data is only half the job; <strong>evaluating it honestly</strong>, so I can speak plainly about what a solution can do and where its limits lie, is just as important.",
     about_p2:"My project work spans the full stack — statistical modelling, machine learning, <strong>LLM pipelines</strong>, and production deployments — with real industry collaborations including <strong>Neogrid Technologies</strong>, <strong>Shaping New Tomorrow</strong>, and a formal partnership with <strong>Lægehåndbogen &amp; Patienthåndbogen</strong> for my clinical NLP thesis.",
-    about_p3:"I approach problems with a <strong>goal-oriented mindset</strong> and always apply coding in an <strong>organisational context</strong> — grounded by years working in retail alongside my studies, which reinforced my understanding of how <strong>business value</strong> is created at every level of an organisation.",
-    about_p4:"My entire education at <strong>AAU</strong> has been <strong>group-based and problem-driven</strong>, giving me a strong collaborative instinct and the ability to take ownership of a team's progress. My thesis in <strong>clinical NLP</strong> brings it all together — rigorous methodology, real stakeholder collaboration, and practical system design in a high-stakes domain.",
+    about_p3:"I approach problems with a <strong>goal-oriented mindset</strong> and always apply coding in an <strong>organisational context</strong> — grounded by years working in retail alongside my studies, which reinforced my understanding of how <strong>business value</strong> is created at every level of an organisation. Evaluation has become a fixed part of how I work: not just building a solution, but being honest about what it can actually deliver and where its boundaries are.",
+    about_p4:"My entire education at <strong>AAU</strong> has been <strong>group-based and problem-driven</strong>, giving me a strong collaborative instinct and the ability to take co-responsibility for a team's progress and ensure knowledge flows freely between everyone involved. My thesis in <strong>clinical NLP</strong> brings it all together — rigorous methodology, real stakeholder collaboration, and practical system design in a high-stakes domain.",
     aside_proj:"Portfolio projects", aside_years:"Years at AAU", aside_pbl:"Problem-Based Learning",
     s_edu:"Education", present:"present", edu_ongoing:"ongoing",
     badge_masters:"Master's", badge_bachelor:"Bachelor's", badge_hhx:"Upper Secondary",
@@ -1446,8 +1286,8 @@ const T = {
     hero_tag:"Business Data Scientist",
     hero_status:"Åben for muligheder",
     hero_degree:"Cand. merc. Business Data Science",
-    hero_bio:"Business Data Science profil med et kommercielt mindset. Jeg har netop afsluttet min cand.merc. i Business Data Science, bygget på metoder og værktøjer, der stadig var under udvikling, mens jeg studerede dem — det giver mig en viden, der er reelt opdateret og skarp. Jeg bringer en unik profil til bordet, hvor akademisk teori møder praktisk forretningsforståelse, formet af en opvækst i et iværksættermiljø og erfaring fra strategisk bestyrelsesarbejde. Jeg lærer og anvender altid kodning i en organisatorisk kontekst — jeg ved, hvordan data skal struktureres for at skabe reel værdi på bundlinjen. Jeg har et stærkt samarbejdes-gen og trives i iterative processer, hvor teamets samlede kompetencer kommer i spil.",
-    hero_quote:'"Min uddannelse ligger i forskningsfronten af faget — meget af det, jeg lærte, udviklede sig så hurtigt, at lærebøgerne endnu ikke havde fulgt med. Den aktuelle, praksisnære viden bringer jeg med ind i ethvert problem, jeg løser."',
+    hero_bio:"Business Data Science-profil med et kommercielt mindset, hvor akademisk teori møder forretningsforståelse. Jeg har netop afsluttet min cand.merc. i Business Data Science, bygget på metoder og værktøjer, der stadig var under udvikling, mens jeg studerede dem — det giver mig en viden, der er reelt opdateret og skarp. Data skal struktureres og evalueres, så det skaber reel værdi på bundlinjen, ikke bare teknisk korrekte resultater. Evaluering er noget, jeg har lært at sætte pris på som en fast del af arbejdet, så man kan være ærlig om, hvad en løsning faktisk kan, og hvor dens grænser går. Samarbejde ligger naturligt, og de bedste resultater kommer i iterative processer, hvor hele teamets kompetencer kommer i spil.",
+    hero_quote:'"Data er kun stærke, når man er ærlig om, hvad de kan og ikke kan. Jeg lægger lige så meget vægt på at evaluere en løsnings grænser, som på at bygge den — og de bedste resultater opstår altid, når hele teamets kompetencer spiller sammen."',
     c_email:"E-mail", c_phone:"Telefon", c_location:"Lokation",
     stat_proj:"Projekter", stat_collab:"Samarbejder", stat_thesis:"Speciale-domæne",
     stat_exp_label:"Praktisk erfaring",
@@ -1497,10 +1337,10 @@ const T = {
     sk_sql:"Relationel databasedesign og forespørgsler til analytiske og transaktionelle formål. Erfaring med SQLite og SQLAlchemy ORM — skemastrukturering, dataseeding og databaseintegration i backend-tjenester.",
     sk_ai:"Hands-on erfaring med den moderne LLM-stack — OpenAI, Gemini og open source-modeller via Hugging Face. Dækker prompt engineering, RAG-pipelines, function calling, vektordatabaser og evalueringsworkflows på tværs af flere projekter.",
     s_about:"Om mig",
-    about_p1:"Jeg har en <strong>cand. merc.</strong> i <strong>Business Data Science</strong> fra Aalborg Universitet, i skæringspunktet mellem analytiske metoder, softwareudvikling og <strong>kommerciel tænkning</strong>. Faget udviklede sig så hurtigt undervejs i studiet, at lærebøgerne ikke kunne følge med — så min viden afspejler fagets aktuelle stade, ikke et øjebliksbillede fra flere år tilbage. Det er yderligere formet af en opvækst i et <strong>iværksættermiljø</strong> og praktisk erfaring som <strong>bestyrelsesmedlem</strong> i Gade og Juul A/S.",
+    about_p1:"Jeg har en <strong>cand. merc.</strong> i <strong>Business Data Science</strong> fra Aalborg Universitet, i skæringspunktet mellem analytiske metoder, softwareudvikling og <strong>kommerciel tænkning</strong>. Faget udviklede sig så hurtigt undervejs i studiet, at lærebøgerne ikke kunne følge med — så min viden afspejler fagets aktuelle stade, ikke et øjebliksbillede fra flere år tilbage. For mig er datastrukturering kun det halve arbejde; at <strong>evaluere den ærligt</strong>, så jeg kan være tydelig om, hvad en løsning kan, og hvor dens grænser går, er lige så vigtigt.",
     about_p2:"Mine projekter spænder over hele stakken — statistisk modellering, maskinlæring, <strong>LLM-pipelines</strong> og produktionsdeployments — med reelle erhvervssamarbejder med <strong>Neogrid Technologies</strong>, <strong>Shaping New Tomorrow</strong> og et formelt partnerskab med <strong>Lægehåndbogen &amp; Patienthåndbogen</strong> til mit kliniske NLP-speciale.",
-    about_p3:"Jeg angriber problemer med et <strong>målorienteret mindset</strong> og anvender altid kodning i en <strong>organisatorisk kontekst</strong> — funderet af flere års butiksarbejde sideløbende med studiet, som styrkede min forståelse af, hvordan <strong>forretningsværdi</strong> skabes på alle niveauer i en organisation.",
-    about_p4:"Hele min uddannelse på <strong>AAU</strong> har været <strong>gruppebaseret og problemdrevet</strong>, hvilket har givet mig et stærkt samarbejdes-gen og evnen til at tage ansvar for teamets fremdrift. Mit speciale i <strong>klinisk NLP</strong> samler det hele — stringent metodologi, reelt interessentsamarbejde og praktisk systemdesign i et højrisiko-domæne.",
+    about_p3:"Jeg angriber problemer med et <strong>målorienteret mindset</strong> og anvender altid kodning i en <strong>organisatorisk kontekst</strong> — funderet af flere års butiksarbejde sideløbende med studiet, som styrkede min forståelse af, hvordan <strong>forretningsværdi</strong> skabes på alle niveauer i en organisation. Evaluering er blevet en fast del af den måde, jeg arbejder på: ikke kun at bygge en løsning, men at være ærlig om, hvad den faktisk kan levere, og hvor dens grænser går.",
+    about_p4:"Hele min uddannelse på <strong>AAU</strong> har været <strong>gruppebaseret og problemdrevet</strong>, hvilket har givet mig et stærkt samarbejdes-gen og evnen til at tage <strong>medansvar for gruppens fremdrift</strong> og sikre, at viden flyder frit mellem alle parter. Mit speciale i <strong>klinisk NLP</strong> samler det hele — stringent metodologi, reelt interessentsamarbejde og praktisk systemdesign i et højrisiko-domæne.",
     aside_proj:"Porteføljeprojekter", aside_years:"År på AAU", aside_pbl:"Problembaseret læring",
     s_edu:"Uddannelse", present:"nu", edu_ongoing:"igangværende",
     badge_masters:"Kandidat", badge_bachelor:"Bachelor", badge_hhx:"Gymnasial",
@@ -1521,7 +1361,6 @@ const T = {
     exp_retail_desc:"Fuldtidsansættelse som butiksmedarbejder hos Løvbjerg og Føtex i sabbatåret — opbyggede arbejdsmoral og kommerciel forståelse inden studiestart.",
   }
 };
-
 function setLang(lang) {
   const t = T[lang];
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -1533,7 +1372,6 @@ function setLang(lang) {
   });
   document.documentElement.lang = lang;
 }
-
 const reveals = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries) => {
   entries.forEach((e, i) => {
