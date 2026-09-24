@@ -181,22 +181,24 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #eef6ef;
-  border: 1px solid #b6ddb8;
+  background: var(--gold-tint);
+  border: 1px solid var(--parchment3);
   padding: 0.35rem 0.85rem;
   font-family: 'DM Mono', monospace;
   font-size: 0.58rem;
   letter-spacing: 0.12em;
-  color: #2d6b35;
+  color: var(--brown-mid);
   text-transform: uppercase;
 }
 .hero-status-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #3a9e45;
+  background: var(--gold);
   animation: blink 2s infinite;
 }
+
+
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
@@ -830,7 +832,7 @@ footer {
     <div class="hero-issue-row">
       <div class="hero-status-pill">
         <span class="hero-status-dot"></span>
-        <span data-i18n="hero_status">Open to opportunities</span>
+        <span data-i18n="hero_status">AI Engineer at Wrist</span>
       </div>
       <p class="hero-issue" data-i18n="hero_tag">Business Data Scientist</p>
     </div>
@@ -1198,7 +1200,7 @@ footer {
   <span class="footer-left">© Mathias Salomonsen Juul · mathiassjuul@gmail.com · +45 71 72 52 62</span>
   <div class="footer-right">
     <a href="https://github.com/Mathias1801" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/mathias-juul-332494186" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/mathias-salomonsen-juul/" target="_blank">LinkedIn</a>
     <a href="mailto:mathiassjuul@gmail.com" data-i18n="nav_contact">Get in touch</a>
   </div>
 </footer>
@@ -1209,7 +1211,7 @@ const T = {
     nav_projects_spare:"Spare Time Projects",
     nav_collab:"Collaboration", nav_skills:"Skills", nav_about:"About", nav_education:"Education", nav_experience:"Experience", nav_contact:"Get in touch",
     hero_tag:"Business Data Scientist",
-    hero_status:"Open to opportunities",
+    hero_status:"AI Engineer at Wrist",
     hero_degree:"Cand. merc. Business Data Science",
     hero_bio:"Business Data Science profile with a commercial mindset, where academic theory meets business understanding. I hold a newly completed cand. merc. in Business Data Science, built on methods and tools that were still evolving as I studied them — giving me a genuinely current, cutting-edge skill set. Data should be structured and evaluated so it creates real bottom-line value, not just technically correct results. I've learned to treat evaluation as a fixed part of the work, so I can be honest about what a solution can actually do and where its limits lie. A strong collaborator who thrives in iterative processes where the whole team's competencies come into play.",
     hero_quote:'"Business and data science aren\'t two separate skill sets to me — they\'re one discipline, shaped by real projects with real organisations. I do my best work close to the people who\'ll use it and the colleagues building it with me."',
@@ -1252,7 +1254,7 @@ const T = {
     badge_academic:"Cand. merc. — Business Data Science",
     grade_label:"Grade",
     grade_pending:"Grade pending",
-    p_cdss_collab:"Developed in collaboration with Esben Eggert Kruse.",
+    p_cdss_collab:"Developed in collaboration with Esben Münster Graahede.",
     s_collab:"Industry Collaboration",
     sk_python:"Primary language across all projects — from data pipelines and statistical modelling to REST APIs and LLM orchestration. Comfortable with the full ecosystem: pandas, NumPy, FastAPI, scikit-learn, and more.",
     sk_data_name:"Data Processing & Analysis",
@@ -1292,7 +1294,7 @@ const T = {
     nav_projects_spare:"Fritidsprojekter",
     nav_collab:"Samarbejde", nav_skills:"Kompetencer", nav_about:"Om mig", nav_education:"Uddannelse", nav_experience:"Erfaring", nav_contact:"Kontakt mig",
     hero_tag:"Business Data Scientist",
-    hero_status:"Åben for muligheder",
+    hero_status:"AI Engineer hos Wrist",
     hero_degree:"Cand. merc. Business Data Science",
     hero_bio:"Business Data Science-profil med et kommercielt mindset, hvor akademisk teori møder forretningsforståelse. Jeg har netop afsluttet min cand.merc. i Business Data Science, bygget på metoder og værktøjer, der stadig var under udvikling, mens jeg studerede dem — det giver mig en viden, der er reelt opdateret og skarp. Data skal struktureres og evalueres, så det skaber reel værdi på bundlinjen, ikke bare teknisk korrekte resultater. Evaluering er noget, jeg har lært at sætte pris på som en fast del af arbejdet, så man kan være ærlig om, hvad en løsning faktisk kan, og hvor dens grænser går. Samarbejde ligger naturligt, og de bedste resultater kommer i iterative processer, hvor hele teamets kompetencer kommer i spil.",
     hero_quote:'"Forretning og data science er ikke to adskilte kompetencer for mig — det er én disciplin, formet af reelle projekter med reelle organisationer. Jeg gør mit bedste arbejde tæt på dem, der skal bruge det, og de kolleger, jeg bygger det sammen med."',
@@ -1335,7 +1337,7 @@ const T = {
     badge_academic:"Cand. merc. — Business Data Science",
     grade_label:"Karakter",
     grade_pending:"Karakter afventer",
-    p_cdss_collab:"Udviklet i samarbejde med Esben Eggert Kruse.",
+    p_cdss_collab:"Udviklet i samarbejde med Esben Münster Graahede.",
     s_collab:"Erhvervssamarbejde",
     sk_python:"Primært sprog i alle projekter — fra datapipelines og statistisk modellering til REST API'er og LLM-orkestrering. Fortrolig med hele økosystemet: pandas, NumPy, FastAPI, scikit-learn og meget mere.",
     sk_data_name:"Databehandling og analyse",
